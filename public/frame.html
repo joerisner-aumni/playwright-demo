@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #111827;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem auto 0;
+        max-width: fit-content;
+      }
+      #submitBtn {
+        background-color: rgb(74, 74, 221);
+        border: 0rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        padding: 0.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 data-testid="iframeHeading">Heading inside iframe</h2>
+    <img src="/ctf.png" alt="Girl playing CTF" width="300" height="160" />
+    <div id="iframeForm">
+      <form>
+        <input type="text" placeholder="Search" />
+        <input type="date" data-testid="dateInput" />
+        <input
+          id="submitBtn"
+          type="button"
+          value="Click Me"
+          data-testid="submitBtn"
+          onclick="alert('hello from alert')"
+        />
+      </form>
+    </div>
+    <div id="renderedDate"></div>
+  </body>
+</html>
