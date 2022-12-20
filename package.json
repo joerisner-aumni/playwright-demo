@@ -12,8 +12,9 @@
   },
   "scripts": {
     "clean": "node ./scripts/clean.js",
+    "cy:open": "cypress open --e2e --browser chrome",
     "start": "node ./src/server.js",
     "test": "playwright test",
-    "test:report": " playwright show-report ./tests/report"
+    "test:report": " playwright show-report ./playwright/report"
   }
 }

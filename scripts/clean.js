@@ -1,6 +1,6 @@
 import { rm } from 'fs';
 
-const removeList = ['./tests/report/', './tests/artifacts/'];
+const removeList = ['./playwright/report/', './playwright/artifacts/', './cypress/screenshots/', './cypress/videos/'];
 
 const removeItem = item => {
   rm(item, { force: true, recursive: true }, error => {

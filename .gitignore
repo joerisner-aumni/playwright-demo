@@ -2,5 +2,5 @@
 node_modules/
 
 # Playwright
-tests/artifacts/
-tests/report/
+playwright/artifacts/
+playwright/report/

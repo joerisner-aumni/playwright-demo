@@ -3,9 +3,9 @@ const config = {
     timeout: 5000, // Maximum time expect() should wait for the condition to be met
   },
   fullyParallel: true,
-  outputDir: './tests/artifacts/', // Folder for test artifacts such as screenshots, videos, traces, etc.
-  reporter: [['dot'], ['html', { open: 'never', outputFolder: './tests/report' }]],
-  testDir: './tests',
+  outputDir: './playwright/artifacts/', // Folder for test artifacts such as screenshots, videos, traces, etc.
+  reporter: [['dot'], ['html', { open: 'never', outputFolder: './playwright/report' }]],
+  testDir: './playwright',
   timeout: 30 * 1000,
   use: {
     actionTimeout: 0, // Maximum time each action such as `click()` can take. 0 = no limit

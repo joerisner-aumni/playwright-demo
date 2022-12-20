@@ -7,5 +7,6 @@ export default defineConfig({
       // implement node event listeners here
     },
     specPattern: 'cypress/specs/**/*.spec.js',
+    supportFile: false,
   },
 });
