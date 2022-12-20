@@ -8,19 +8,42 @@
         color: #fff;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0 auto;
-        width: 50rem;
+        width: 65rem;
       }
       h1 {
+        text-align: center;
+      }
+      h2 {
         text-align: center;
       }
       iframe {
         border: 3px solid #ffa500;
         border-radius: 1rem;
       }
+      .wrapper {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+      }
     </style>
   </head>
   <body>
-    <h1 data-testid="externalMessage">Heading outside iframe</h1>
-    <iframe data-testid="myIframe" src="/frame.html" height="800" width="800"></iframe>
+    <h1 data-testid="externalMessage">Testing iframes</h1>
+    <main class="wrapper">
+      <div>
+        <h2>Same-origin iframe</h2>
+        <iframe data-testid="sameOriginFrame" src="/frame.html" height="375" width="500"></iframe>
+      </div>
+      <div>
+        <h2>Cross-origin iframe</h2>
+        <iframe
+          data-testid="crossOriginFrame"
+          src="https://todomvc.com/examples/typescript-react/#/"
+          height="375"
+          width="500"
+        ></iframe>
+      </div>
+    </main>
   </body>
 </html>
