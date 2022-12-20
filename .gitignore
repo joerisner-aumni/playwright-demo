@@ -4,3 +4,7 @@ node_modules/
 # Playwright
 playwright/artifacts/
 playwright/report/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
