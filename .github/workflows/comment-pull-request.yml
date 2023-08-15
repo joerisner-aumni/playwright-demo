@@ -1,9 +1,10 @@
-name: comment
+name: comment-pull-request
 
 on: pull_request
 
 jobs:
-  add-simple-comment:
+  # This is currently adding a new comment for every new event to the PR. Needs to delete a pre-existing comment first.
+  add-comment:
     runs-on: ubuntu-latest
     steps:
       - name: Add new comment
