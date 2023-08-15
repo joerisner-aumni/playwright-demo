@@ -1,0 +1,16 @@
+name: comment
+
+on:
+  check_run:
+    types: completed
+
+jobs:
+  add-simple-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add new comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.number }}
+          body: |
+            :chicken: This is a test comment created by a check_run (completed) event

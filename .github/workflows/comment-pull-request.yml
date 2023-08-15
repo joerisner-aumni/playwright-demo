@@ -1,0 +1,14 @@
+name: comment
+
+on: pull_request
+
+jobs:
+  add-simple-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add new comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.number }}
+          body: |
+            :fire: This is a test comment created by a pull_request event
