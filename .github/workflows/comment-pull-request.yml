@@ -3,6 +3,7 @@ name: comment
 on: pull_request
 
 jobs:
+  # This is currently adding a new comment for every new event to the PR. Needs to delete a pre-existing comment first.
   add-simple-comment:
     runs-on: ubuntu-latest
     steps:
