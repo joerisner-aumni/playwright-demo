@@ -22,11 +22,11 @@ const config = {
       },
     },
   ],
-  // webServer: {
-  //   command: "yarn start",
-  //   timeout: 120 * 1000,
-  //   url: "http://localhost:4000",
-  // },
+  webServer: {
+    command: 'yarn start',
+    timeout: 120 * 1000,
+    url: 'http://localhost:4000',
+  },
 };
 
 export default config;

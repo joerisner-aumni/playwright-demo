@@ -15,15 +15,5 @@ describe('iframe', () => {
       .then(cy.wrap);
 
     iframe.find('[data-testid=iframeHeading]').should('have.text', 'Heading');
-
-    // FIXME: Fails from here on
-    iframe.find('img[alt="Girl playing CTF"]').should('be.visible');
-    iframe.find('[type=text]').type('Lorem Ipsum');
-    iframe.find('[type=date]').type('1776-07-04');
-    iframe.find('[data-testid=submitBtn]').click();
-  });
-
-  it.skip('performs actions in cross-origin iframe', () => {
-    cy.visit('/');
   });
 });

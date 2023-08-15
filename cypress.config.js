@@ -8,5 +8,6 @@ export default defineConfig({
     },
     specPattern: 'cypress/specs/**/*.spec.js',
     supportFile: false,
+    video: false
   },
 });
