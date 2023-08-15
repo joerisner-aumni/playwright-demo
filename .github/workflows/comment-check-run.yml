@@ -1,6 +1,8 @@
 name: comment
 
-on: pull_request
+on:
+  check_run:
+    types: completed
 
 jobs:
   add-simple-comment:
@@ -11,5 +13,4 @@ jobs:
         with:
           issue-number: ${{ github.event.number }}
           body: |
-            :fire: This is a test comment created by this action:
-              - [create-or-update-comment](https://github.com/peter-evans/create-or-update-comment)
+            :chicken: This is a test comment created by a check_run (completed) event
