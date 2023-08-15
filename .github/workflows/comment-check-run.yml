@@ -8,6 +8,9 @@ jobs:
   add-comment:
     runs-on: ubuntu-latest
     steps:
+      - name: echo output of event
+        run: |
+          echo ${{ github.event }}
       - name: Add new comment
         uses: peter-evans/create-or-update-comment@v3
         with:
