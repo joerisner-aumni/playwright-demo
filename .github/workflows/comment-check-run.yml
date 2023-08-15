@@ -1,11 +1,11 @@
-name: comment
+name: comment-check-run
 
 on:
   check_run:
-    types: completed
+    types: [completed]
 
 jobs:
-  add-simple-comment:
+  add-comment:
     runs-on: ubuntu-latest
     steps:
       - name: Add new comment
